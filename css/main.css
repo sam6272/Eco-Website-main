@@ -581,6 +581,7 @@ float: left;
   width:100%;
   border-top:solid #265658;
   position: absolute;
+  position: sticky;
   bottom: -155%;
 background-color: #ECE0CD;
 }
