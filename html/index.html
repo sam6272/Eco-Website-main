@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>digital websites</title>
+<link rel="stylesheet"  href="../css/main.css"/>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<script src="https://kit.fontawesome.com/a77b1b2fa9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+		<div class="navbar">
+			<i class='bx bx-menu'></i>
+			<div class="logo"><a href="#"><img src="../Image/logo.jpg"></a></div>
+			<div class="nav-links">
+			<div class="sidebar-logo">
+				<span class="logo-name">CodingLab</span>
+				<i class='bx bx-x' ></i>
+			</div>
+			<ul class="links">
+				<li><a href="index.html" class="home">HOME</a></li>
+				<li>
+					<a href="walk.html"class="walk">WALK</a>
+					<i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+					<ul class="htmlCss-sub-menu sub-menu">
+						<li><a href="#">WALK 1</a></li>
+						<li><a href="#">WALK 2</a></li>
+						<li><a href="#">WALK 3</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html" class="about">ABOUT US</a></li>
+				<li><a href="contact.html" class="contact">CONTACT US</a></li>
+			</ul>
+		</div>
+		<div class="search-box">
+			<i class='bx bx-search'></i>
+			<div class="input-box">
+				<input type="text" placeholder="Search...">
+			</div>
+		</div>
+	</div>
+</nav>
+
+<section class="slider1">
+	<!-- Container for the image gallery -->
+	<div class="container">
+		<!-- Full-width images with number text -->
+		<div class="mySlides">
+			<img src="../Image/Boston-Public-Garden.webp" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<img src="../Image/beautiful-panorama-green-city-park-260nw-529541479.webp" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<img src="../Image/Boston-Public-Garden.webp" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<img src="../Image/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTg4NTM1NjkvNzg1NjNmYjE0ZmZiYzhmMGVlZGNhMjdhM2EyNzUyY2MuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZ.jpeg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<img src="../Image/lake-te-ko-utu-cambridge-nz.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<img src="../Image/maungakawa-scenic-reserve-cambridge-sjp-15.jpg" style="width:100%">
+		</div>
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<!-- Image text -->
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+		<!-- Thumbnail images -->
+		<div class="row">
+			<div class="column">
+				<img class="demo cursor" src="../Image/maungakawa-scenic-reserve-cambridge-sjp-15.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="../Image/academy-lake-univeristy-of-waikato-hamilton-nz.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="../Image/lake-te-ko-utu-cambridge-nz.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="../Image/Boston-Public-Garden.webp" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="../Image/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTg4NTM1NjkvNzg1NjNmYjE0ZmZiYzhmMGVlZGNhMjdhM2EyNzUyY2MuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZ.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="../Image/Nature-and-nosh-guided-walks-wine-food-tours-8.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="photo"data-aos="fade-up">
+	<div class="p">
+		<div class="p1"><h2>Posted on October 22 by Molly</h2>
+			<h3>Long Stretch of Gravel</h3>
+			<p>Earthly eco is a beautiful city just 1.5 hours south of Auckland in New Zealand. The Māori name for Hamilton translates to “long stretch of gravel”. With a few staple destinations, The Hamilton Gardens, Hamilton Zoo, and Hamilton Lake, there is plenty of nature to explore. There are over 12 designated walkways and paths cutting through and wrapping around the city.Did you know that Hamilton is one of the only cities in New Zealand to support a resident population of long-tailed bats? You might just hear some echoing around Hamilton Lake or The Waikato River if the conditions are right!</p>
+		</div>
+		<div class="p2" data-aos="fade-up"><img src="../Image/p1.webp"></div>
+	</div>
+</section>
+<section class="photo"data-aos="fade-up">
+	<div class="pa">
+		<div class="pa2" ><img src="../Image/tramper-on-the-kepler1920v2.jpg"></div>
+		<div class="pa1"><h2>Posted on October 30 by Susie</h2>
+			<h3>Walking in Nature Can Benefit Our Health</h3>
+			<p>Spending time in green space or bringing nature into your everyday life can benefit both your mental and physical wellbeing. Breathing fresh air can help regulate your levels of serotonin and promote happiness and well-being. The recommended distance we should be walking each day is 10,000 steps. Walking this range of steps in a day has a wide range health benefits:</p>
+			<ul><li>Improve your mood</li>
+				<li> feelings of stress or anger</li>
+				<li>help you take time out and feel more relaxed</li>
+				<li>improve your physical health (burning body fat and strengthening muscles)</li>
+				<li>strengthening the heart and increases circulation.</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="photo" data-aos="fade-up">
+	<div class="pb">
+		<div class="pb1">
+			<h2>Posted on October 31 by James</h2>
+			<h3>This the Season to be Spooky</h3>
+			<p>Kirikiriroa is a great place to explore, however not very many know how truely diffrent it is at night if your feeling brave enough and invite a few freinds to there are a few walks waiting to be explored...Every so often the Hamilton City Gardens will open up at night and you can re-explore all your favorite gardens. You can also travel to the Hamilton Lake but it can get dark and spooky... don't say I did not warn you.</p>
+		</div>
+	<div class="pb2"><img src="../Image/images.jpeg"></div></div>
+</section>
+
+<footer>
+	<div class="footer1">
+		<div class="foot"><img src="../Image/logo1.jpg"></div>
+		<div class="foot1"><p>Copyright © 2023 Earthly Eco . All rights reserved.</p></div>
+		<div class="foot2">
+			<a href="" ><i class="fa-brands fa-twitter"  ></i></a>
+			<a href=""><i class="fa-brands fa-instagram " ></i></a>
+			<a href=""><i class="fa-brands fa-linkedin-in "></i></a>
+			<a href=""><i class="fa-brands fa-facebook " ></i></a></div>
+	</div>
+</footer>
+	<script src="../Js/main.js"></script>
+   	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   	<script	script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+    </script>
+</body>
+</html>
